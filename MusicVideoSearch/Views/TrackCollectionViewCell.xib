@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TrackCollectionViewCell" id="gTV-IL-0wX" customClass="TrackCollectionViewCell" customModule="MusicVideoSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="193" height="238"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="193" height="238"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjq-b5-fe7" customClass="TrackRowView" customModule="MusicVideoSearch" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="193" height="238"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="chq-N1-7aQ"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yjq-b5-fe7" secondAttribute="bottom" id="C1w-f7-UrT"/>
+                <constraint firstItem="yjq-b5-fe7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JAK-2h-i3D"/>
+                <constraint firstAttribute="trailing" secondItem="yjq-b5-fe7" secondAttribute="trailing" id="Oo9-1F-T7d"/>
+                <constraint firstItem="yjq-b5-fe7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sMa-eI-YSA"/>
+            </constraints>
+            <size key="customSize" width="193" height="238"/>
+            <connections>
+                <outlet property="rowView" destination="yjq-b5-fe7" id="gSQ-T5-Emj"/>
+            </connections>
+            <point key="canvasLocation" x="135.50724637681159" y="197.54464285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

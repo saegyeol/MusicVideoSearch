@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xot-W4-YVa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="aOX-Ud-Paq">
+            <objects>
+                <viewController id="xot-W4-YVa" customClass="DetailViewController" customModule="MusicVideoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IdU-4L-bnZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGM-vw-gV2" customClass="TrackRowView" customModule="MusicVideoSearch" customModuleProvider="target">
+                                <rect key="frame" x="20.5" y="243.5" width="373" height="419"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AGM-vw-gV2" secondAttribute="height" multiplier="8:9" id="2yx-vJ-gW3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VGN-jS-3bd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AGM-vw-gV2" firstAttribute="centerX" secondItem="VGN-jS-3bd" secondAttribute="centerX" id="Edg-MT-2qu"/>
+                            <constraint firstItem="AGM-vw-gV2" firstAttribute="centerY" secondItem="VGN-jS-3bd" secondAttribute="centerY" id="M1W-RN-f7B"/>
+                            <constraint firstItem="AGM-vw-gV2" firstAttribute="width" secondItem="IdU-4L-bnZ" secondAttribute="width" multiplier="0.9" id="VRb-7L-MZ0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rowView" destination="AGM-vw-gV2" id="OGb-Wz-zKh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jaz-Jc-FOx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-536" y="-13"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
